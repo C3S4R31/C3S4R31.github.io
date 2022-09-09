@@ -1,0 +1,14 @@
+body{
+    background: #E5E5E5;
+}
+
+main{
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.mensaje{
+    background-repeat: no-repeat;
+    background-image: url(imagenes/Muñeco.png);
+}
