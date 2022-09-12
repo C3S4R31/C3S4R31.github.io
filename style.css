@@ -76,6 +76,7 @@ main{
     border: none;
     border-radius: 14px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .desencripar{
@@ -86,6 +87,7 @@ main{
     border: 2px solid #0A3871;
     border-radius: 22px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 /*=============================================================*/
@@ -111,9 +113,15 @@ main{
 .mensaje{ 
     width: 90%;   
     height: 80%;
+    resize: none;
+    outline: none;
     border: none;
+    font-size: 24px;
+    color: #495057;
     background-repeat: no-repeat;
-    background-image: url(imagenes/Muñeco.png);
+    background-image: url(imagenes/Muñeco.svg);
+    background-size: contain;
+    background-position: center;
 }
 
 .copiar{
@@ -122,5 +130,7 @@ main{
     color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
     background: #FFFFFF;
 }
