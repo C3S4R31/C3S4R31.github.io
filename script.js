@@ -1,5 +1,8 @@
 const inputText = document.querySelector(".input-texto");
 const mensaje = document.querySelector(".mensaje");
+const copiar = document.querySelector(".copiar");
+const texto1 = document.querySelector(".texto-1");
+const texto2 = document.querySelector(".texto-2");
 
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -31,17 +34,35 @@ function desencriptar(stringDesencriptada){
 }
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(inputText.value);
-    mensaje.value = textoEncriptado;
-    mensaje.style.backgroundImage = "none";
-    inputText.value = "";
+    if(inputText.value == ""){
+        alert("No hay un mensaje para encriptar")
+    }else{
+        const textoEncriptado = encriptar(inputText.value);
+        mensaje.value = textoEncriptado;
+        mensaje.style.backgroundImage = "none";
+        mensaje.style.height = "80%";
+        texto1.style.display = "none";
+        texto2.style.display = "none";
+        copiar.style.display = "block";
+        inputText.value = "";
+    }
+    
 }
 
 function btnDesencriptar(){
-    const textoDesencriptado = desencriptar(inputText.value);
-    mensaje.value = textoDesencriptado;
-    mensaje.style.backgroundImage = "none";
-    inputText.value = "";
+    if(inputText.value == ""){
+        alert("No hay un mensaje para desencriptar")
+    }else{
+        const textoDesencriptado = desencriptar(inputText.value);
+        mensaje.value = textoDesencriptado;
+        mensaje.style.backgroundImage = "none";
+        mensaje.style.heigh = "80%";
+        texto1.style.display = "none";
+        texto2.style.display = "none";
+        copiar.style.display = "block";
+        inputText.value = "";
+    }
+    
 }
 
 function btnCopiar(){

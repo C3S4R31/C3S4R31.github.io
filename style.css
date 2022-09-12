@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 body{
     background: #E5E5E5;
     font-family: 'Inter', sans-serif;
@@ -43,7 +44,8 @@ main{
     border: none;    
     font-size: 32px;
     color: #0A3871;
-    background: none;        
+    background: none;
+    font-family: 'Inter', sans-serif;            
 }
 
 .input-texto::placeholder{
@@ -77,6 +79,7 @@ main{
     border-radius: 14px;
     font-size: 16px;
     cursor: pointer;
+    font-family: 'Inter', sans-serif;
 }
 
 .desencripar{
@@ -88,6 +91,7 @@ main{
     border-radius: 22px;
     font-size: 16px;
     cursor: pointer;
+    font-family: 'Inter', sans-serif;
 }
 
 /*=============================================================*/
@@ -112,7 +116,7 @@ main{
 
 .mensaje{ 
     width: 90%;   
-    height: 80%;
+    height: 50%;
     resize: none;
     outline: none;
     border: none;
@@ -121,10 +125,29 @@ main{
     background-repeat: no-repeat;
     background-image: url(imagenes/Muñeco.svg);
     background-size: contain;
-    background-position: center;
+    background-position: bottom;
+
+}
+
+.texto-1{
+    width: 90%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #343A40;
+
+}
+
+.texto-2{
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+
 }
 
 .copiar{
+    display: none;
     width: 90%;
     height: 9%;
     color: #0A3871;
@@ -133,4 +156,5 @@ main{
     cursor: pointer;
     font-size: 16px;
     background: #FFFFFF;
+    font-family: 'Inter', sans-serif;    
 }
