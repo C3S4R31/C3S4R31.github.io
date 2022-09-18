@@ -4,6 +4,7 @@
 
 body{
     display: flex;
+    justify-content: flex-start;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -16,7 +17,6 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    /* background: violet; */
 }
 
 header img{
@@ -27,7 +27,6 @@ main{
     width: 85%;
     height: 100%;
     display: flex;
-    /* background: seagreen; */
 }
 /*==============================================================*/
 .caja-input{
@@ -35,7 +34,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    /* background: royalblue; */
 }
 
 .seccion-input{
@@ -44,15 +42,16 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background: yellowgreen; */
 }
 
 .input-texto{
     width: 100%;
-    height: 87%;
+    height: 82%;
     padding-top: 10%;
     resize: none;
     border: none;
+    outline: none;
+    overflow: auto;
     font-size: 32px;
     color: #0A3871;
     background: none;
@@ -64,11 +63,12 @@ main{
 
 .info{
     width: 100%;
-    height: 5%;
+    height: 9%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* background: turquoise; */
+    color: #495057;
+    font-size: 18px;
 
 }
 
@@ -78,7 +78,6 @@ main{
     display: flex;
     justify-content: space-between;
     gap: 5%;
-    /* background: red; */
 }
 
 .encriptar{
@@ -89,7 +88,13 @@ main{
     border-radius: 24px;
     border: none;
     color: #FFFFFF;
-        
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.encriptar:hover{
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    background: #D8DFE8;
 }
 
 .desencriptar{
@@ -100,7 +105,12 @@ main{
     border: 2px solid #0A3871;
     border-radius: 24px;
     background: #D8DFE8;
-
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.desencriptar:hover{
+    color: #FFFFFF;
+    background: #0A3871;    
 }
 
 /*==============================================================*/
@@ -110,14 +120,13 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: mediumslateblue; */
 }
 
 .seccion-mensaje{
     width: 85%;
     height: 95%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;    
@@ -135,10 +144,11 @@ main{
     overflow: auto;
     resize: none;
     border: none;
+    outline: none;
     background-image: url(imagenes/Muñeco.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     font-size: 24px;
     color: #495057;
 }
@@ -170,5 +180,12 @@ main{
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copiar:hover{
+    color: #FFFFFF;
+    background: #0A3871;
 }
 /*==============================================================*/

@@ -4,6 +4,7 @@ const copiar = document.querySelector(".copiar");
 const cajatexto = document.querySelector(".caja-texto");
 const seccion = document.querySelector(".seccion-mensaje");
 
+
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     
@@ -11,8 +12,7 @@ function encriptar(stringEncriptada){
 
     for(let i = 0; i < matrizCodigo.length; i++){
         if(stringEncriptada.includes(matrizCodigo[i][0])){
-            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
-            
+            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);            
         }
     }
 
@@ -44,7 +44,8 @@ function btnEncriptar(){
         cajatexto.style.display = "none";
         copiar.style.display = "block";
         seccion.style.justifyContent = "space-between";
-        inputText.value = "";
+        inputText.value = "";  
+        
     }
     
 }
@@ -71,3 +72,6 @@ function btnCopiar(){
     mensaje.value = "";
     alert("Texto copiado");
 }
+
+/*==============================================================*/
+
